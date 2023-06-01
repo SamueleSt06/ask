@@ -1,0 +1,95 @@
+h6
+{
+
+    position: absolute;
+    width: 259px;
+    height: 135px;
+    left: 845px;
+    top: 475px;
+    
+    font-family: 'Mplus 1p';
+    font-style: medium;
+    font-weight: 500;
+    font-size: 109px;
+    line-height: 162px;
+    display: flex;
+    align-items: center;
+    
+    
+    
+    background: linear-gradient(0deg, rgba(47, 23, 185, 0) 0%, #bababa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    
+
+
+}
+h1{
+    position: absolute;
+    left: 41.5%;
+    top: 0%;
+    bottom: 90%;
+    
+    font-family: 'Mplus 1p';
+    font-style: 'bolt';
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 148px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #FFFFFF;
+      
+  
+  }
+  h2{
+    position: absolute;
+    left: 5.5%;
+    top: 13%;
+    bottom: 90%;
+    
+    font-family: 'Mplus 1p';
+    font-style: 'bolt';
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 158px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #FFFFFF;
+      
+  
+  }
+
+  h3{
+    position: absolute;
+    left: 5.5%;
+    top: 15%;
+    font-family: 'Mplus 1p';
+    font-style: 'bolt';
+    font-weight: 500;
+    font-size: 35px;
+    display: flex;
+    
+    
+    color: #FFFFFF;
+      
+  
+  }
+
+
+#gradiente{
+    position: absolute;
+    width: 508px;
+    height: 202px;
+    left: 665px;
+    top: 50px;
+    
+    background: #FFFFFF;
+    mix-blend-mode: screen;
+    filter: blur(300px);
+    }
