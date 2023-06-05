@@ -1,0 +1,115 @@
+
+h7{color: aliceblue;
+
+    position: absolute;
+    width: 533px;
+    height: 50px;
+    left: 1560px;
+    top: 42px;
+
+    font-size: 22px;
+}
+.cerca{
+
+    position:absolute;
+    top:40px;
+    left: 1700px;
+    
+    
+}
+.carrello{
+
+    position:absolute;
+    top:40px;
+    left: 1800px;
+    
+    
+}
+
+#immagine_occhio{
+    position: absolute;
+    width: 1000px;
+    height: 500px;
+    border-radius: 79px;
+
+}
+
+#nuvole{
+    position: absolute;
+    width: 372px;
+    height: 714px;
+    left: 1375px;
+    top: 1100px;
+    border-radius: 46px;
+
+}
+#tramonto{
+    position: absolute;
+width: 372px;
+height: 719px;
+left: 119px;
+top: 1100px;
+
+border-radius: 46px;
+}
+.rettangolo{
+    position: absolute;
+width: 391px;
+height: 282px;
+left: 558px;
+top: 1200px;
+z-index: -1;
+
+background: linear-gradient(260.43deg, #D9D9D9 -3.7%, rgba(217, 217, 217, 0.206298) 93.91%, rgba(217, 217, 217, 0) 127.34%);
+border-radius: 73px;
+}
+.fo{
+    position: absolute;
+width: 257px;
+height: 135px;
+left: 650px;
+top: 1275px;
+
+font-family: 'Libre Baskerville';
+font-style: normal;
+font-weight: 700;
+font-size: 109px;
+line-height: 135px;
+display: flex;
+letter-spacing: 0.72em;
+
+color: #000000;
+}
+.rettangolo2{
+    position: absolute;
+width: 385px;
+height: 292px;
+left: 950px;
+top: 1270px;
+z-index: -1;
+background: linear-gradient(279.2deg, rgba(217, 217, 217, 0.206298) -7.89%, #D9D9D9 106.9%, rgba(217, 217, 217, 0) 113.56%);
+border-radius: 73px;
+}
+
+.to{
+    position: absolute;
+width: 271px;
+height: 135px;
+left: 1041px;
+top: 1345px;
+
+font-family: 'Libre Baskerville';
+font-style: normal;
+font-weight: 700;
+font-size: 109px;
+line-height: 135px;
+display: flex;
+letter-spacing: 0.72em;
+
+color: #000000;
+}
+body 
+{
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
