@@ -1,0 +1,478 @@
+body{
+    color:rgb(255, 255, 255);
+    background: black;
+    text-align:center;
+    font-size: x-large;
+    font-family:'Yeseva One';
+}
+h1{
+  position: absolute;
+  left: 30%;
+  top: 0%;
+  bottom: 90%;
+  
+  font-family: 'Mplus 1p';
+  font-style: 'bolt';
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 148px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: #FFFFFF;
+    
+
+}
+.h2
+{
+    color: aliceblue;
+
+    position: absolute;
+    width: 533px;
+    height: 50px;
+    left: 65px;
+    top: 600px;
+
+
+    
+    font-size: 22px;
+}
+
+h6{
+  position: absolute;
+  left: 75%;
+  top: 90%;
+  bottom: 90%;
+  
+  font-family: 'Mplus 1p';
+  font-style: 'bolt';
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 148px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: #FFFFFF;
+    
+
+}
+
+textarea:focus
+input:focus{outline: none;}
+
+
+#registrazione{
+  box-sizing: border-box;
+
+position: absolute;
+width: 1500px;
+height: 673.81px;
+left: 217.5px;
+top: 195px;
+
+border: 2px solid #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 53px;
+transform: rotate(0deg);
+
+  }
+
+
+.oppure
+{
+  
+  position: absolute;
+    width: 533px;
+    height: 50px;
+    left: 470px;
+    top: 430px;
+
+
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 53px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+}
+
+#gradiente{
+position: absolute;
+width: 798px;
+height: 202px;
+left: 565px;
+top: 450px;
+
+background: #FFFFFF;
+mix-blend-mode: screen;
+filter: blur(230px);
+}
+#gradiente2
+{
+  position: absolute;
+width: 1900px;
+height: 3.4px;
+left: 7px;
+top: 110.1px;
+
+background: #FFFFFF;
+mix-blend-mode: lighten;
+opacity: 0.7;
+filter: blur(0.5px);
+border-radius: 6px;
+}
+
+#gradiente3
+{
+  position: absolute;
+width: 1900px;
+height: 6.8px;
+left: 7px;
+top: 110.1px;
+
+filter: blur(10px);
+border-radius: 4px;
+
+background: linear-gradient(90deg, #e5e4e9 8.33%, #f9f9f9 83.37%);
+mix-blend-mode: normal;
+}
+
+.google {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 406px;
+  height: 50px;
+  left: 1065px;
+  top: 170px;
+  z-index: -1;
+  
+ 
+  border: 31px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 53px;
+    
+  }
+  
+  .accedigoogle {
+    position: absolute;
+    width: 406px;
+  height: 50px;
+  left: 1170px;
+  top: 175px;
+    
+    font-family: 'Mplus 1p';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: rgba(0, 0, 0, 0.68);
+
+  }
+  .apple{
+    box-sizing: border-box;
+
+  position: absolute;
+  width: 406px;
+  height: 50px;
+  left: 1065px;
+  top: 450px;
+  z-index: -1;
+  
+ 
+  border: 31px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 53px;
+
+  }
+  .accediapple {
+    position: absolute;
+    width: 302px;
+    height: 25px;
+    left: 1170px;
+    top: 470px;
+    
+    font-family: 'Mplus 1p';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: rgba(0, 0, 0, 0.68);
+
+  }
+  .username1{
+    box-sizing: border-box;
+    position: absolute;
+    width: 406px;
+    height: 50px;
+    left: 145px;
+    top: 100px;
+    z-index: -1;
+    border: 31px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 53px;
+  }
+
+  .name_input[type="text"] {
+    position:absolute;
+    left:185px;
+     top:110px;
+      width: 300px;
+       height: 40px;
+        background: transparent;
+         border: none; 
+         color: #232222;
+         font-size: 30px;
+  }
+  .cognome1{
+    box-sizing: border-box;
+    position: absolute;
+    width: 406px;
+    height: 50px;
+    left: 600px;
+    top: 100px;
+    z-index: -1;
+    border: 31px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 53px;
+  }
+  .name_cognome[type="text"] {
+    position:absolute;
+    left: 640px;
+     top:110px;
+      width: 300px;
+       height: 40px;
+        background: transparent;
+         border: none; 
+         color: #232222;
+         font-size: 30px;
+  }
+  .nome_utentebianco{
+    box-sizing: border-box;
+    position: absolute;
+    width: 406px;
+  height: 50px;
+  left: 145px;
+  top: 200px;
+    z-index: -1;
+    border: 31px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 53px;
+
+  }
+  
+  .nome_utentetxt[type="text"] {
+    position:absolute;
+    left: 185px;
+     top:210px;
+      width: 300px;
+       height: 40px;
+        background: transparent;
+         border: none; 
+         color: #232222;
+         font-size: 30px;
+  }
+  .emailnome{
+    box-sizing: border-box;
+    position: absolute;
+    width: 406px;
+  height: 50px;
+  left: 600px;
+  top: 200px;
+    z-index: -1;
+    border: 31px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 53px;
+
+  }
+  .emailnometxt[type="text"] {
+    position:absolute;
+    left: 640px;
+     top:210px;
+      width: 300px;
+       height: 40px;
+        background: transparent;
+         border: none; 
+         color: #232222;
+         font-size: 30px;
+  }
+
+ 
+  .password1{
+    box-sizing: border-box;
+    position: absolute;
+    width: 406px;
+    height: 50px;
+    left: 145px;
+    top: 300px;
+    z-index: -1;
+    border: 31px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 53px;
+  }
+  .password_input[type="password"] {
+    position:absolute;
+    left:185px;
+     top:285px;
+      width: 300px;
+       height: 40px;
+        background: transparent;
+         border: none; 
+         color: #232222;
+         font-size: 30px;
+  }
+  #pwd{
+    position:absolute;
+    left:185px;
+     top:310px;
+      width: 300px;
+       height: 40px;
+        background: transparent;
+         border: none; 
+         color: #232222;
+         font-size: 30px;
+
+}
+
+.passwordbianco{
+  box-sizing: border-box;
+  position: absolute;
+  width: 406px;
+height: 50px;
+left: 600px;
+top: 300px;
+  z-index: -1;
+  border: 31px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 53px;
+
+}
+.verificapasswordtxt[type="text"] {
+  position:absolute;
+  left: 640px;
+   top:310px;
+    width: 300px;
+     height: 40px;
+      background: transparent;
+       border: none; 
+       color: #232222;
+       font-size: 30px;
+}
+#pwd1{
+  position:absolute;
+  left:640px;
+   top:310px;
+    width: 300px;
+     height: 40px;
+      background: transparent;
+       border: none; 
+       color: #232222;
+       font-size: 30px;
+
+}
+
+#datadinascita{
+
+  position: absolute;
+  width: 650px;
+  height: 50px;
+  left: 275px;
+  top: 515px;
+  background: transparent;
+  border: none; 
+  color: #232222;
+  font-size: 30px;
+
+
+}
+.databianco{
+  box-sizing: border-box;
+  position: absolute;
+  width: 700px;
+  height: 50px;
+  left: 250px;
+  top: 510px;
+  z-index: -1;
+  border: 31px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 53px;
+
+}
+.linea{
+  position: absolute;
+width: 160px;
+height: 0px;
+left: 65px;
+top: 315px;
+
+border: 1px solid #FFFFFF;
+
+}
+.linea2{
+  position: absolute;
+width: 160px;
+height: 0px;
+left: 445px;
+top: 315px;
+
+border: 1px solid #FFFFFF;
+
+}
+.linea3{
+position: absolute;
+width: 1679.81px;
+height: 6.41px;
+left: 120px;
+top: 500px;
+
+transform: matrix(1, 0.01, 0.01, -1, 0, 0);
+}
+  #inpunt{
+    align-items: center;
+}
+#nome{
+    font-size: 30px;
+
+}
+.lineaverticale{
+  position: absolute;
+width: 601.12px;
+height: 0.35px;
+left: 745px;
+top: 330px;
+
+border: 2px solid #FFFFFF;
+transform: matrix(0, 1, 1, 0, 0, 0);
+
+}
+
+input {
+
+border-radius: 30px;
+
+width: 100px;
+height: 55px;
+
+font-size: 35px;
+
+   position: absolute;
+   top: 590px; left: 523px;
+}
+body 
+{
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+

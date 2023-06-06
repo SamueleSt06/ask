@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Login Ask!</title>
+
+<!--Bootstrap CSS-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="./CSS/login.css">
+
+</head>
+
+<body>
+
+  
+	<a href="index.html"><img style="position:absolute;left:0px; top:0px;" src="./images/whitearrow.png" width="120" height="120"> </a>
+
+<!--qui è presente il titolo e i collegamenti del css per la linea sotto al titolo-->
+  <h1>Accedi ad Ask!</h1>
+  <div id="gradiente"></div>
+  <div id="gradiente1"></div>
+  <div id="gradiente2"></div>
+  <div id="gradiente3"></div>
+  
+  <div id="login">
+
+  <!--qui ci sono delle semplici caselle di testo per username e password. Successivamente è presente l'immagine dell'occhiolino cliccabile-->
+  <div class="username1"></div>
+      <input  class="name_input" type="text" placeholder="Username...">
+  
+  <div class="password1"></div>
+        <input class="password_input" id="pwd" type="password"  placeholder="Password...">
+
+  <a input type="button" onclick="showPwd()" value="Mostra password"> 
+        <img src="./images/occhiopass.png" style="position:absolute;left:500px; top:195px;" width="35px"></a>
+
+<script src="password.js"></script>
+
+      <div class="oppure"><I>OPPURE</I></div>
+
+    <!--qui invece sono presenti le caselle di testo che ricollegano a 2 pagine di accesso: google e apple-->
+    
+    <img style="position:absolute;left:170px; top:413px;"src="./images/google.jpg" width="39">
+
+    <div class="google"></div>
+    <a class="accedigoogle" href="#">Accedi con Google</a>
+    
+    <img style="position:absolute;left:170px; top:488px;"src="./images/apple.jpg" width="39">
+    <div class="apple"></div>
+    <a class="accediapple" href="./CSS/login.css">Accedi con Apple⠀ </a>
+
+    <a class="h2" href="registrazione.html"  >
+
+      REGISTRATI
+
+    </a>
+
+    <div class="linea"></div>
+    <div class="linea2"></div>
+  
+  </div>
+</div>
+
+<!--bootstrap JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
