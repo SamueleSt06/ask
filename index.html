@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <link rel="stylesheet" href="./CSS/nav.css"> 
+    <link rel="stylesheet" href="./CSS/barra_ricerca.css">                <!-- collegamenti alle pagine CSS-->
+    <link rel="stylesheet" href="./CSS/ask.css">             
+    <link rel="stylesheet" href="./CSS/carrello.css"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ask!</title>
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <!--in #gradiente è presente il codice css per la sfumatura della pagina home-->
+        <!--in #gradiente1, #gradiente2 e #gradiente3 è presente il codice css per la linea luminosa della homepage-->
+
+    <style>
+      
+      #gradiente {
+        position: absolute;
+        width: 798px;
+        height: 202px;
+        left: 565px;                                     
+        top: 450px;
+        background: #FFFFFF;
+        mix-blend-mode: screen;
+        filter: blur(230px);
+        
+      }
+      #gradiente1 {
+        position: absolute;
+        width: 1910px;
+        height: 6.8px;
+        left: 2px;
+        top: 108.6px;
+        opacity: 1;
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 6px;
+         z-index: 1001;
+      }
+      #gradiente2 {
+        position: absolute;
+        width: 1900px;
+        height: 3.4px;
+        left: 7px;
+        top: 110.1px;
+        background: #FFFFFF;
+        mix-blend-mode: lighten;
+        opacity: 0.7;
+        filter: blur(0.5px);
+        border-radius: 6px;
+        z-index: 1001;
+      }
+      #gradiente3 {
+        position: absolute;
+        width: 1900px;
+        height: 6.8px;
+        left: 7px;
+        top: 110.1px;
+        filter: blur(10px);
+        border-radius: 4px;
+        background: linear-gradient(90deg, #e5e4e9 8.33%, #f9f9f9 83.37%);
+        mix-blend-mode: normal;
+        z-index: 1001;
+      }
+
+    /*css per l'implementazione della barra di ricerca */
+
+      body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #000000;
+          
+        }
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 999;
+        }
+
+        #overlay.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        #overlay-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #000000; 
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        #overlay.active #overlay-bg {
+            opacity: 1; 
+        }
+  
+  </style>
+            
+
+ <!--nello script è presente il codice JavaScript per l'implementazione della barra di ricerca-->
+ <script>
+  // Funzione per mostrare l'overlay
+  function mostraOverlay() {
+    var overlay = document.getElementById('overlay');
+    overlay.classList.add("active");
+    var check = document.getElementById('check');
+    var input = document.querySelector('.search-box input[type="text"]');
+    var searchBox = document.querySelector('.search-box');
+
+    overlay.style.display = 'block';
+    input.focus();
+    
+    check.checked=true;
+    searchBox.style.display = 'block';  
+
+    document.getElementById("overlay-bg").addEventListener("click", chiudiOverlay);
+}
+
+  // Funzione per chiudere l'overlay
+  function chiudiOverlay() {
+    var overlay = document.getElementById("overlay");
+    var check = document.getElementById('check');
+    var searchBox = document.querySelector('.search-box');
+
+
+    check.style.display = 'none';
+    check.style.opacity = 1;
+    check.checked = false;
+    searchBox.style.display = 'none';
+   
+
+    
+    overlay.classList.remove("active");
+    document.getElementById("immagine").addEventListener("click", mostraOverlay);
+}
+
+  document.getElementById("immagine").addEventListener("click", mostraOverlay);
+
+  </script>
+  
+  
+<!--CSS per il carrello-->
+<style>
+#Carrello1{
+  position: absolute;
+  display: none;
+width: 240px;
+height: 300px;
+top: 150px;
+left: 1600px;
+background: #f8f7f7;
+border-radius: 30px;
+z-index: 1000;
+}
+
+nav ul{
+    display:flex;
+    flex-direction: column;
+    align-items: left;
+    list-style-type: none;
+
+}
+
+nav ul li a{
+text-decoration: none;
+color:#000000;
+font-size: 22px;
+
+}
+.vaiallacassa{
+    background-color:#000000;
+    border-radius: 10px;
+    width: 180px;
+    
+
+  }
+  .lineaorizzontale{
+  
+    width: 180px;
+    height: 0px;
+    border: 2px solid #E3E3E6;
+
+
+}
+.lineaspaziatrice{
+
+  width: 180px;
+    height: 0px;
+    border:2px solid#f8f7f7;
+   
+
+}
+</style>
+
+<!--JS per il carrello-->
+<script>
+function mostraCarrello1() {
+      var Carrello1 = document.getElementById("Carrello1");
+      Carrello1.style.display = "block";
+    }
+
+    function chiudiCarrello1() {
+      var Carrello1 = document.getElementById("Carrello1");
+      Carrello1.style.display = "none";
+    }
+
+    document.addEventListener("click", function(event) {
+      var Carrello1 = document.getElementById("Carrello1");
+      var immagine_carrello = document.getElementById("immagine_carrello");
+      var targetElement = event.target;
+
+      if (
+        targetElement !== immagine_carrello &&
+        targetElement !== Carrello1 &&
+        !Carrello1.contains(targetElement)
+      ) {
+        chiudiCarrello1();
+      }else{
+        mostraCarrello1();
+      }
+    });
+
+</script>
+</head>
+
+<body style="background-color:#000000;">
+
+  
+    <div id="gradiente"></div>
+    <div id="gradiente1"></div>
+    <div id="gradiente2"></div>
+    <div id="gradiente3"></div>
+    
+      
+    
+    <!-- Qui sono presenti anche i collegamenti alle altre pagine: login,registrazione,supporto-->
+    
+
+     <div class="h8"> Shop!</div>
+
+     <div>
+      <a href="./CSS/login.css"><h9>Immagini</h9></a>
+    </div>
+    <div>
+      <a href="grafiche.html">
+        <h10>Grafiche</h10></a>
+    </div>
+    <div>
+      <a href="./CSS/login.css"><h11>Disegni</h11></a>
+    </div>
+    <div>
+      <a href="supporto.html"><h12>Supporto</h12></a>
+    </div>
+     <div><h13>ASK!</h13></div>
+     
+    <div>
+      <a href="registrazione.html">
+        <h7>Sign up</h7>
+      </a>
+    </div>
+  
+
+
+   <!--la barra di ricerca-->
+   <div class="cerca">
+    <img src="./images/cerca.png"  width="150" height="45" id="immagine" onclick="mostraOverlay()">
+</div>
+
+<div id="overlay">
+  <div id="overlay-bg"></div>
+  <div class="box">
+    <input type="checkbox" id="check">
+    <div class="search-box">
+        <input type="text" placeholder="Type here...">
+        <label for="check" class="icon">
+            <i class="fas fa-search"></i>
+        </label>
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+    <!--Carrello-->
+     <div class="carrello">
+      <img src="./images/carrello.png" width="45" height="45" id="immagine_carrello" onclick="mostraCarrello1()">
+     </div>
+    
+      <nav id="Carrello1">
+      <ul>
+        <br>
+            <li><img style="position:absolute" src="./images/SOLE.jpg" width="50" Vspace="14.5"><a href=""> ⠀⠀⠀⠀⠀Immagine ⠀⠀⠀⠀⠀pando</a></li>
+              <a class="lineaspaziatrice"></a> <a class="lineaspaziatrice"></a> <a class="lineaspaziatrice"></a><a class="lineaspaziatrice"></a>
+            <li class="vaiallacassa" ><a href="#" style="color: white;">⠀Vai alla cassa</a></li>
+              <a class="lineaspaziatrice"></a> <a class="lineaspaziatrice"></a> <a class="lineaspaziatrice"></a><a class="lineaspaziatrice"></a>
+            <li><img src="./images/borsetta.jpg" width="20"><a href="#">⠀Borsa spese (n)</a></li>
+              <a class="lineaorizzontale"></a> 
+              <a class="lineaspaziatrice"></a> <a class="lineaspaziatrice"></a> <a class="lineaspaziatrice"></a><a class="lineaspaziatrice"></a>
+            <li><img src="./images/articoli.png" width="20"><a href="#">⠀Articoli salvati </a></li>
+              <a class="lineaorizzontale"></a>
+        <br>
+      </ul>
+      </nav>
+
+  
+
+ <!--Qui sono inserite  le immagini presenti nella hoempage del sito -->
+
+ <img id="tramonto" src="./images/tramonto.png">
+ <div class="rettangolo"></div>
+ <div class="fo"><p>FO</p></div>
+ <div class="rettangolo2"></div>
+ <div class="to"><p>TO</p></div>
+ <img id="nuvole" src="./images/nuvole.png">
+ <div id="s"></div>
+ <div id="s2"></div>
+ <div class="rettangolo"></div>
+ <div class="fo"><p>FO</p></div>
+ <div class="rettangolo2"></div>
+ <div class="to"><p>TO</p></div>
+ <div id="vettore"></div>
+ <div id="sf"></div>
+ <div id="sf2"></div>
+ <img id="tramonto" src="./images/tramonto.png">
+ <img id="nuvole" src="./images/nuvole.png">
+ <div id="lineasotto"></div>
+ <div id="lineasotto2"></div>
+ <div id="lineasopra"></div>
+ <div id="lineasopra2"></div>
+
+ <div id="vettore2"></div>  <!--linea che divide le schermate -->
+                                    
+ <div class="rettangolo3"></div>    <!--parte dei settore disegni-->
+ <div class="dise"><p>DISE</p></div>
+ <div class="rettangolo4"></div>
+ <div class="gni"><p>GNI</p></div>
+
+ <div id="s3"></div>
+ <div id="s4"></div>
+ <div class="rettangolo3"></div>
+ <div class="dise"><p>DISE</p></div>
+ <div class="rettangolo4"></div>
+ <div class="gni"><p>GNI</p></div>
+
+ <div id="vettore3"></div>
+ <div id="sf3"></div>
+ <div id="sf4"></div>
+
+ <div id="lineasotto3"></div>
+ <div id="lineasotto4"></div>
+ <div id="lineasopra3"></div>
+ <div id="lineasopra4"></div>
+
+
+
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+
+
+
+   <!-- ez:<img id="immagine_occhio" src="./images/occhio.png" Vspace="2100" Hspace="450">
+    <p><img style="position:absolute;left:0px; top:0px;" src="./images/candela.png" Vspace="1000" Hspace="0"></p>
+    <p><img style="position:absolute;left:0px; top:0px;" src="./images/cielo.png" Vspace="1200" Hspace="900" width="800" height="800"></p>--> 
+
+    <!-- Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  </body>
+</html>

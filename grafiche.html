@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supporto ASK!</title>
+
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" href="./CSS/supporto.css">
+    <link rel="stylesheet" href="./CSS/grafiche.css">
+</head> 
+<body style="background-color:#000000;">
+  
+
+    <a href="index.html"><img style="position:absolute;left:0px; top:0px;" src="./images/whitearrow.png" width="120" height="120"> </a>
+    
+    <!--qui è presente il titolo e i collegamenti del css per la linea sotto al titolo-->
+    <h1> GRAFICHE</h1>
+
+    <div id="gradiente"></div>
+    <div id="gradiente1"></div>
+    <div id="gradiente2"></div>
+    <div id="gradiente3"></div>
+
+    <div class="text"></div>
+    
+    <input  class="text_input" type="text" placeholder="Type here...">
+
+    
+<div class="box">
+ 
+    <span style="--i:1;"><img src="./images/SOLE.jpg" alt=""></span>
+     
+    <span style="--i:2;"><img src="./images/instagram.png" alt=""></span>
+    
+    <span style="--i:3;"><img src="./images/candela.png" alt=""></span>
+     
+    <span style="--i:4;"><img src="./images/telegram.webp" alt=""></span>
+     
+    <span style="--i:5;"><img src="./images/occhio.png" alt=""></span>
+     
+    <span style="--i:6;"><img src="./images/nuvole.png" alt=""></span> 
+    
+    <span style="--i:7;"><img src="./images/tramonto.png" alt=""></span>
+     
+    <span style="--i:8;"><img src="./images/apple.jpg" alt=""></span>
+     
+    </div>
+     
+    <script type="text/javascript">
+        let box = document.querySelector('.box');
+        window.onmousemove = function(e){
+            let x = e.clientX/3;
+            box.style.transform="perspective(1000px) rotateY("+ x + "deg)";
+        }
+        </script>
+    
+    
+    
+
+</body>
+
+</html>
