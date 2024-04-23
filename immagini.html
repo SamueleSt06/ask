@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Questa è la pagina delle immagini -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immagini ask!</title>
+
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/supporto.css">
+    <link rel="stylesheet" href="./CSS/immagini.css">
+</head> 
+<body style="background-color:#000000;">
+  
+    <a href="index.html"> <img style="position:absolute;left:0px; top:0px;" src="./images/logo.png" Vspace="7" Hspace="70" width="150"></a>
+    
+    <!-- Qui è presente il titolo e i collegamenti del CSS per la linea sotto al titolo -->
+    <h1> IMMAGINI</h1>
+
+    <div id="gradiente"></div>
+    <div id="gradiente1"></div>
+    <div id="gradiente2"></div>
+    <div id="gradiente3"></div>
+
+    <div class="search-bar">
+        <input class="search-input" type="text" placeholder="Cerca...">
+        <button class="search-button" type="submit"><i class="fas fa-search"></i></button>
+    </div>
+      
+    <div class="box">
+        <span style="--i:1;"><img src="./images/_J5A9329.jpeg" alt=""></span>
+        <span style="--i:2;"><img src="./images/1J5A9332.jpeg" alt=""></span>
+        <span style="--i:3;"><img src="./images/IMG_0229.jpeg" alt=""></span>
+        <span style="--i:4;"><img src="./images/IMG_0233.jpeg" alt=""></span>
+        <span style="--i:5;"><img src="./images/IMG_0235.jpeg" alt=""></span>
+        <span style="--i:6;"><img src="./images/IMG_1350.jpeg" alt=""></span> 
+        <span style="--i:7;"><img src="./images/IMG_1877.jpeg" alt=""></span>
+        <span style="--i:8;"><img src="./images/IMG_9932.jpeg" alt=""></span>
+    </div>
+     
+    <script type="text/javascript">
+        // Modifiche per la rotazione automatica delle immagini
+        let box = document.querySelector('.box');
+        let rotationAngle = 0; // Angolo iniziale di rotazione
+        let rotationSpeed = 0.2; // Velocità di rotazione in gradi per frame
+
+        // Funzione per aggiornare la rotazione
+        function updateRotation() {
+            rotationAngle += rotationSpeed;
+            box.style.transform = "perspective(1000px) rotateY(" + rotationAngle + "deg)";
+            requestAnimationFrame(updateRotation);
+        }
+
+        // Avvio della rotazione automatica
+        updateRotation();
+    </script>
+</body>
+</html>

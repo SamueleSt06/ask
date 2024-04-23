@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadati -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supporto ASK!</title>
+
+    <!-- Collegamenti ai fogli di stile -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/supporto.css">
+    <link rel="stylesheet" href="./CSS/disegni.css">
+
+    <!-- Stili CSS interni -->
+    <style>
+    /* Stili CSS per il corpo della pagina */
+    body {
+      font-family: "Lato", sans-serif;
+      background-color: #000000; /* Sfondo nero */
+    }
+
+    /* Stili CSS per la barra laterale (sidebar) */
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    .sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    /* Stili CSS per il bottone per aprire la sidebar */
+    .openbtn {
+      font-size: 30px;
+      cursor: pointer;
+      background-color: #111;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      position: fixed; /* Posizionamento fisso */
+      width:50px;
+      top: 25px; /* Distanza dal top */
+      right: 40px; /* Distanza dalla destra */
+    }
+
+    .openbtn:hover {
+      background-color: #444;
+    }
+
+    /* Stili CSS per il contenuto principale */
+    #main {
+      transition: margin-right .5s;
+      padding: 16px;
+    }
+    </style>
+</head> 
+<body>
+  
+
+  <!-- Logo -->
+  <a href="index.html">
+    <img style="position:absolute;left:0px; top:0px;" src="./images/logo.png" Vspace="7" Hspace="40" width="150">
+  </a>
+
+ <!--qui è presente il titolo e i collegamenti del css per la linea sotto al titolo-->
+ <h1> Disegni</h1>
+
+ <div id="gradiente"></div>
+ <div id="gradiente1"></div>
+ <div id="gradiente2"></div>
+ <div id="gradiente3"></div>
+ <!-- prova
+ <div id="registrazione"></div>
+--> 
+
+
+  <!-- Barra di ricerca -->
+  <div class="search-bar">
+    <input class="search-input" type="text" placeholder="Cerca...">
+    <button class="search-button" type="submit"><i class="fas fa-search"></i></button>
+  </div>
+
+<!-- Contenuto principale -->
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+</div>
+
+  <!-- Sidebar -->
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="index.html">Home</a>
+    <a href="#">Carrello</a>
+    <a href="supporto.html">Supporto</a>
+  </div>
+
+
+   <!-- Script per l'implementazione della sidebar -->
+   <script>
+    // Funzione per aprire la sidebar
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginRight = "250px";
+    }
+  
+    // Funzione per chiudere la sidebar
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginRight= "0";
+    }
+    </script>
+
+  <!-- Slider delle immagini -->
+  <div class="container">
+    <span class="slider" id="slider1"></span>
+    <span class="slider" id="slider2"></span>
+    <span class="slider" id="slider3"></span>
+    <span class="slider" id="slider4"></span>
+    <span class="slider" id="slider5"></span>
+    <span class="slider" id="slider6"></span>
+    <span class="slider" id="slider7"></span>
+
+    <div class="imgContainer">
+      <!-- Slide 1 -->
+      <div class="slide_div" id="slide_1">
+        <img src="./images/nuvole.png" alt="" class="img" id="img1">
+        <a href="#slider1" class="button" id="button1"></a>
+      </div>
+      <!-- Slide 2 -->
+      <div class="slide_div" id="slide_2">
+        <img src="./images/nuvole.png" alt="" class="img" id="img2">
+        <a href="#slider2" class="button" id="button2"></a>
+      </div>
+      <!-- Slide 3 -->
+      <div class="slide_div" id="slide_3">
+        <img src="./images/tramonto.png" alt="" class="img" id="img3">
+        <a href="#slider3" class="button" id="button3"></a>
+      </div>
+      <!-- Slide 4 -->
+      <div class="slide_div" id="slide_4">
+        <img src="./images/tramonto.png" alt="" class="img" id="img4">
+        <a href="#slider4" class="button" id="button4"></a>
+      </div>
+      <!-- Slide 5 -->
+      <div class="slide_div" id="slide_5">
+        <img src="./images/nuvole.png" alt="" class="img" id="img5">
+        <a href="#slider5" class="button" id="button5"></a>
+      </div>
+      <!-- Slide 6 -->
+      <div class="slide_div" id="slide_6">
+        <img src="./images/tramonto.png" alt="" class="img" id="img6">
+        <a href="#slider6" class="button" id="button6"></a>
+      </div>
+      <!-- Slide 7 -->
+      <div class="slide_div" id="slide_7">
+        <img src="./images/nuvole.png" alt="" class="img" id="img7">
+        <a href="#slider7" class="button" id="button7"></a>
+      </div>
+    </div>
+  </div>
+
+ 
+</body>
+</html>
